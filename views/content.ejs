@@ -1,0 +1,60 @@
+<div class="date__class">
+
+
+  <div class="form__class">
+    <h1>Search with Date and Time to get the avialable Restaurant:-</h1>
+
+    <%if(typeof(error)!='undefined'){%>
+      <div class="alert alert-danger" role="alert">
+        <h4>
+          <%-error%>
+        </h4>
+
+      </div>
+      <%}%>
+        <form action="/content" method="POST">
+          <div class="container ">
+
+            <div class="form-group">
+              <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control" name="date" required>
+                <span class=" input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary  ">Submit</button>
+
+
+
+          </div>
+
+        </form>
+  </div>
+  <div class="result__class">
+    <div class="result__class_header">List of Shops opened on :-</div>
+
+    <div class="result__class_headerdate">
+      <%if(typeof(date)!='undefined'){%>
+        <%-date%>
+          <%}%>
+    </div>
+    <ol>
+      <%if(typeof(answers)=='object'){%>
+        <% answers.forEach(answer=>{%>
+
+          <li class="licontent">
+            <%-answer['Kushi Tsuru']%>
+          </li>
+
+
+          <%})}else{%>
+
+            <li>Please Search to get the avialable Restaurant....</li>
+            <%}%>
+    </ol>
+  </div>
+
+</div>

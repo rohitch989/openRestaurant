@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+.date__class {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.date__class .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group {
+  width: 50%;
+}
+.date__class button {
+  margin-left: 4rem;
+  margin-bottom: 1.5rem;
+}
+.result__class {
+  background-color: bisque;
+  color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.result__class ol {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: end;
+  margin-top: 2rem;
+}
+.result__class ol li {
+  align-items: center;
+}
+.result__class ol .licontent {
+  align-items: center;
+  margin: 0.5rem 2rem;
+}
+.form__class {
+  max-width: 80%;
+  height: 100%;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form__class form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result__class_header {
+  color: white;
+  font-size: 2.3rem;
+  margin: 2rem 3rem auto;
+  font-family: 'Pacifico', sans-serif;
+  border-bottom: 2px solid white;
+  letter-spacing: 0.2rem;
+}
+.form__class h1 {
+  color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+  font-family: 'Pacifico', sans-serif;
+}
+.result__class_headerdate {
+  color: white;
+  font-size: 2rem;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pacifico', sans-serif;
+  border-bottom: 2px solid white;
+  letter-spacing: 0.2rem;
+}
